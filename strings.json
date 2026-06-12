@@ -1,0 +1,45 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "B&B Home",
+        "description": "Connect Home Assistant to a B&B Home / Bits & Bites controller.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "init_string": "Init string",
+          "password": "Password",
+          "raw_switch_count": "Raw switch count",
+          "raw_input_count": "Raw input count",
+          "raw_function_count": "Raw function count",
+          "raw_dimmer_count": "Raw dimmer count",
+          "raw_temperature_count": "Raw temperature count"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect"
+    },
+    "abort": {
+      "already_configured": "This B&B Home controller is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "B&B Home options",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "init_string": "Init string",
+          "password": "Password",
+          "raw_switch_count": "Raw switch count",
+          "raw_input_count": "Raw input count",
+          "raw_function_count": "Raw function count",
+          "raw_dimmer_count": "Raw dimmer count",
+          "raw_temperature_count": "Raw temperature count"
+        }
+      }
+    }
+  }
+}
