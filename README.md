@@ -75,18 +75,6 @@ If raw switch or dimmer counts are set, the light platform creates raw numbered 
 - Audio source selection and media controls use the Android app's audio input mapping: `room_index * 368 + source_index * 46`, plus the button position for controls.
 - This is a community integration and is not affiliated with Home Assistant, B&B Home, or Bits & Bites.
 
-## Repository Setup Checklist
-
-Before publishing the repository, verify these values:
-
-- The repository URL is `https://github.com/CasperNaudts/bbhome-home-assistant`.
-- The manifest `codeowners` entry is `@CasperNaudts`.
-- The copyright holder in `LICENSE` is correct.
-- The GitHub repository description is set, for example `Home Assistant integration for B&B Home / Bits & Bites controllers`.
-- The GitHub repository topics include `home-assistant`, `hacs`, `integration`, and `bbhome`.
-
-Do not commit local credentials or discovery files. The included `.gitignore` excludes `login.txt`, APK files, Python caches, Home Assistant local storage, and secrets.
-
 ## Development
 
 Run the same lightweight checks used by GitHub Actions:
