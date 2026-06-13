@@ -21,13 +21,8 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
     raw_switch_count = config_value(entry, CONF_RAW_SWITCH_COUNT, 0)
     raw_dimmer_count = config_value(entry, CONF_RAW_DIMMER_COUNT, 0)
     if raw_switch_count or raw_dimmer_count:
-        dimmer_addresses = set(range(1, raw_dimmer_count + 1))
         entities = [
-            *[
-                BBHomeRawSwitchLight(coordinator, client, address)
-                for address in range(1, raw_switch_count + 1)
-                if address not in dimmer_addresses
-            ],
+            *[BBHomeRawSwitchLight(coordinator, client, address) for address in range(1, raw_switch_count + 1)],
             *[BBHomeRawDimmerLight(coordinator, client, address) for address in range(1, raw_dimmer_count + 1)],
         ]
     else:
