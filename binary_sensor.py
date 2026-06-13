@@ -38,4 +38,4 @@ class BBHomeRawInputBinarySensor(CoordinatorEntity, BinarySensorEntity):
 
     @property
     def is_on(self) -> bool:
-        return self._client.raw_input_states.get(self._address, False)
+        return not self._client.raw_input_states.get(self._address, False)
